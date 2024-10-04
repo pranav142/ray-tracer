@@ -2,26 +2,19 @@
 #include "hittable.h"
 #include "image.h"
 #include "interval.h"
-#include <cstdint>
-#include <sys/types.h>
+#include "vec.h"
 
-Pixel Camera::_get_ray_color(const Ray &ray, const Interval &interval,
-                             const World &world) const {
+Vec3 Camera::_get_ray_color(const Ray &ray, const Interval &interval,
+                            const World &world) const {
   HitRecord hit_record;
   double is_hit = world.intersects(ray, interval, hit_record);
   if (!is_hit) {
     auto a = 0.5 * (ray.direction().y() + 1);
-    return Pixel{uint8_t(0.5 * (1 - a) * 255), uint8_t(0.7 * (1 - a) * 255),
-                 255};
+    return Vec3(0.5 * (1 - a), 0.7 * (1 - a), 1);
   }
 
-  Vec3 scaled_surface_normal = 0.5 * (Vec3(1, 1, 1) + hit_record.normal);
-
-  return Pixel{
-      uint8_t(255 * scaled_surface_normal.x()),
-      uint8_t(255 * scaled_surface_normal.y()),
-      uint8_t(255 * scaled_surface_normal.z()),
-  };
+  std::clog << hit_record.normal << '\n';
+  return 0.5 * (Vec3(1, 1, 1) + hit_record.normal);
 }
 
 void Camera::render(const World &world, Image &image) const {
@@ -38,14 +31,27 @@ void Camera::render(const World &world, Image &image) const {
 
   for (size_t y = 0; y < image.height(); y++) {
     for (size_t x = 0; x < image.width(); x++) {
-      Vec3 ray_direction =
-          Vec3(view_port_origin.x() + dx * x, view_port_origin.y() - dy * y,
-               view_port_origin.z());
-      ray_direction.normalize();
-
-      Ray ray(m_camera_origin, ray_direction);
-      Pixel color = _get_ray_color(ray, valid_interval, world);
-      image.set_pixel(x, y, color);
+      Vec3 final_color(0, 0, 0);
+      for (size_t i = 0; i < m_pixels_per_sample; i++) {
+        Ray ray = _get_random_ray_in_pixel(x, y, dx, dy, view_port_origin);
+        Vec3 ray_color = _get_ray_color(ray, valid_interval, world);
+        final_color = final_color + ray_color;
+      }
+      image.set_pixel(x, y, final_color / m_pixels_per_sample);
     }
   }
+}
+
+Ray Camera::_get_random_ray_in_pixel(size_t x, size_t y, double dx, double dy,
+                                     const Vec3 &view_port_origin) const {
+  // double random_offset = random_double();
+  // std::clog << random_offset << '\n';
+  double random_offset = 0;
+  Vec3 ray_direction =
+      Vec3((view_port_origin.x() + dx * x) + random_offset * dx,
+           (view_port_origin.y() - dy * y) + random_offset * dy,
+           view_port_origin.z());
+
+  ray_direction.normalize();
+  return Ray(m_camera_origin, ray_direction);
 }

@@ -24,7 +24,7 @@ Vec3 operator-(const Vec3 &lhs, const Vec3 &rhs) {
 }
 
 Vec3 operator+(const Vec3 &lhs, const Vec3 &rhs) {
-  return Vec3(lhs.x() + rhs.x(), lhs.y() + rhs.y(), lhs.z() + lhs.z());
+  return Vec3(lhs.x() + rhs.x(), lhs.y() + rhs.y(), lhs.z() + rhs.z());
 }
 
 Vec3 operator/(const Vec3 &lhs, const double scalar) {

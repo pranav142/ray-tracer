@@ -8,9 +8,11 @@
 class Camera {
 public:
   Camera(double aspect_ratio, double view_port_height, double focal_length,
-         double camera_x, double camera_y, double camera_z)
+         double camera_x, double camera_y, double camera_z,
+         int pixels_per_sample)
       : m_camera_origin(camera_x, camera_y, camera_z),
-        m_focal_length(focal_length), m_view_port_height(view_port_height) {}
+        m_focal_length(focal_length), m_view_port_height(view_port_height),
+        m_pixels_per_sample(pixels_per_sample) {}
 
   void render(const World &world, Image &image) const;
 
@@ -18,7 +20,11 @@ private:
   double m_view_port_height;
   double m_focal_length;
   Vec3 m_camera_origin;
+  int m_pixels_per_sample;
 
-  Pixel _get_ray_color(const Ray &ray, const Interval &interval,
-                       const World &world) const;
+  Vec3 _get_ray_color(const Ray &ray, const Interval &interval,
+                      const World &world) const;
+
+  Ray _get_random_ray_in_pixel(size_t x, size_t y, double dx, double dy,
+                               const Vec3 &view_port_origin) const;
 };

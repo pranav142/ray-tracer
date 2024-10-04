@@ -1,20 +1,16 @@
 #pragma once
 
+#include "vec.h"
 #include <cmath>
 #include <cstddef>
-#include <stdint.h>
 #include <vector>
-
-struct Pixel {
-  uint8_t r, g, b;
-};
 
 class Image {
 private:
   size_t m_height;
   size_t m_width;
   double m_aspect_ratio;
-  std::vector<Pixel> m_image;
+  std::vector<Vec3> m_image;
 
   bool _is_valid_pixel_coord(int x, int y);
 
@@ -28,6 +24,6 @@ public:
   size_t height() const;
   double aspect_ratio() const;
 
-  void set_pixel(int x, int y, Pixel color);
-  Pixel get_pixel(int x, int y) const;
+  void set_pixel(int x, int y, Vec3 color);
+  Vec3 get_pixel(int x, int y) const;
 };

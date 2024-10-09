@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/pknadimp/ray_tracing/src/image.cpp" "CMakeFiles/ray_tracer.dir/src/image.cpp.o" "gcc" "CMakeFiles/ray_tracer.dir/src/image.cpp.o.d"
   "/home/pknadimp/ray_tracing/src/interval.cpp" "CMakeFiles/ray_tracer.dir/src/interval.cpp.o" "gcc" "CMakeFiles/ray_tracer.dir/src/interval.cpp.o.d"
   "/home/pknadimp/ray_tracing/src/main.cpp" "CMakeFiles/ray_tracer.dir/src/main.cpp.o" "gcc" "CMakeFiles/ray_tracer.dir/src/main.cpp.o.d"
+  "/home/pknadimp/ray_tracing/src/material.cpp" "CMakeFiles/ray_tracer.dir/src/material.cpp.o" "gcc" "CMakeFiles/ray_tracer.dir/src/material.cpp.o.d"
   "/home/pknadimp/ray_tracing/src/plane.cpp" "CMakeFiles/ray_tracer.dir/src/plane.cpp.o" "gcc" "CMakeFiles/ray_tracer.dir/src/plane.cpp.o.d"
   "/home/pknadimp/ray_tracing/src/ray.cpp" "CMakeFiles/ray_tracer.dir/src/ray.cpp.o" "gcc" "CMakeFiles/ray_tracer.dir/src/ray.cpp.o.d"
   "/home/pknadimp/ray_tracing/src/sphere.cpp" "CMakeFiles/ray_tracer.dir/src/sphere.cpp.o" "gcc" "CMakeFiles/ray_tracer.dir/src/sphere.cpp.o.d"

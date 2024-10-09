@@ -3,6 +3,9 @@
 #include "interval.h"
 #include "ray.h"
 #include "vec.h"
+#include <memory>
+
+class Material;
 
 struct HitRecord {
   double t;
@@ -10,6 +13,7 @@ struct HitRecord {
   Vec3 intersection_point;
   Vec3 normal;
   bool front_face;
+  std::shared_ptr<Material> material;
 };
 
 class Hittable {

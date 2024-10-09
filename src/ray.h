@@ -3,6 +3,7 @@
 
 class Ray {
 public:
+  Ray() : m_origin(Vec3(0, 0, 0)), m_direction(Vec3(0, 0, 0)) {}
   Ray(const Vec3 &origin, const Vec3 &direction)
       : m_origin(origin), m_direction(direction) {}
 

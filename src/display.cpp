@@ -1,11 +1,19 @@
 #include "interval.h"
+#include <cmath>
 #include <image.h>
 #include <iostream>
 
-void write_color(std::ostream &out, const Vec3 &pixel_color) {
-  auto r = pixel_color.x();
-  auto g = pixel_color.y();
-  auto b = pixel_color.z();
+inline double linear_to_gamma(double linear) {
+  if (linear >= 0) {
+    return std::sqrt(linear);
+  }
+
+  return 0;
+}
+static void write_color(std::ostream &out, const Vec3 &pixel_color) {
+  auto r = linear_to_gamma(pixel_color.x());
+  auto g = linear_to_gamma(pixel_color.y());
+  auto b = linear_to_gamma(pixel_color.z());
 
   static const Interval intensity(0.000, 0.999);
   int rbyte = int(256 * intensity.clamp(r));

@@ -6,6 +6,7 @@ void set_no_hit(HitRecord &hit_record) {
   hit_record.hit = false;
   hit_record.intersection_point = Vec3(0, 0, 0);
   hit_record.normal = Vec3(0, 0, 0);
+  hit_record.material = nullptr;
 }
 
 void set_face_normal(const Ray &ray, Vec3 &outward_normal,

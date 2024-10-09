@@ -1,4 +1,5 @@
 #include "vec.h"
+#include "utility.h"
 
 #include <cmath>
 
@@ -39,9 +40,18 @@ Vec3 operator*(const double scalar, const Vec3 &rhs) {
   return Vec3(rhs.x() * scalar, rhs.y() * scalar, rhs.z() * scalar);
 }
 
+Vec3 operator*(const Vec3 lhs, const Vec3 &rhs) {
+  return Vec3(lhs.x() * rhs.x(), lhs.y() * rhs.y(), lhs.z() * rhs.z());
+}
+
 double Vec3::magnitude() const {
   return std::sqrt(this->x() * this->x() + this->y() * this->y() +
                    this->z() * this->z());
+}
+
+bool Vec3::close_to_zero(double epsilon) const {
+  return std::abs(this->x()) < epsilon && std::abs(this->y()) < epsilon &&
+         std::abs(this->z()) < epsilon;
 }
 
 void Vec3::normalize() {
@@ -56,3 +66,29 @@ double dot(const Vec3 &a, const Vec3 &b) {
 }
 
 Vec3 unit_vector(const Vec3 &vector) { return vector / vector.magnitude(); }
+
+Vec3 random_vector(double min, double max) {
+  return Vec3(random_double(min, max), random_double(min, max),
+              random_double(min, max));
+}
+
+Vec3 random_unit_vector() {
+  while (true) {
+    Vec3 random_vec = random_vector(-1, 1);
+    if (random_vec.magnitude() > 1e-180) {
+      return unit_vector(random_vec);
+    }
+  }
+}
+
+Vec3 refract(const Vec3 &incident_vec, const Vec3 &normal, double ratio_n1_n2) {
+
+  auto cos_theta = std::fmin(dot(-1 * incident_vec, normal), 1.0);
+  Vec3 perpendicular_direction =
+      ratio_n1_n2 * (incident_vec + cos_theta * normal);
+  Vec3 parellel_direction =
+      -std::sqrt(
+          1 - std::abs(dot(perpendicular_direction, perpendicular_direction))) *
+      normal;
+  return perpendicular_direction + parellel_direction;
+}

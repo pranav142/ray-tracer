@@ -24,6 +24,7 @@ bool InfinitePlane::intersects(const Ray &ray, const Interval &interval,
   hit_record.t = t;
   hit_record.intersection_point = ray.at(t);
   Vec3 outward_normal = unit_vector(m_normal);
+  hit_record.material = m_material;
   set_face_normal(ray, outward_normal, hit_record);
   return true;
 }

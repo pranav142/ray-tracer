@@ -273,6 +273,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ray_tracer.dir/build.make CMakeFiles/ray_tracer.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/material.o: src/material.cpp.o
+.PHONY : src/material.o
+
+# target to build an object file
+src/material.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ray_tracer.dir/build.make CMakeFiles/ray_tracer.dir/src/material.cpp.o
+.PHONY : src/material.cpp.o
+
+src/material.i: src/material.cpp.i
+.PHONY : src/material.i
+
+# target to preprocess a source file
+src/material.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ray_tracer.dir/build.make CMakeFiles/ray_tracer.dir/src/material.cpp.i
+.PHONY : src/material.cpp.i
+
+src/material.s: src/material.cpp.s
+.PHONY : src/material.s
+
+# target to generate assembly for a file
+src/material.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ray_tracer.dir/build.make CMakeFiles/ray_tracer.dir/src/material.cpp.s
+.PHONY : src/material.cpp.s
+
 src/plane.o: src/plane.cpp.o
 .PHONY : src/plane.o
 
@@ -420,6 +444,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/material.o"
+	@echo "... src/material.i"
+	@echo "... src/material.s"
 	@echo "... src/plane.o"
 	@echo "... src/plane.i"
 	@echo "... src/plane.s"

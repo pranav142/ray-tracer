@@ -196,4 +196,12 @@ CMakeFiles/ray_tracer.dir/src/camera.cpp.o: \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
- /usr/include/c++/11/pstl/execution_defs.h
+ /usr/include/c++/11/pstl/execution_defs.h \
+ /home/pknadimp/ray_tracing/src/material.h \
+ /home/pknadimp/ray_tracing/src/utility.h /usr/include/c++/11/random \
+ /usr/include/c++/11/bits/random.h \
+ /usr/include/c++/11/bits/uniform_int_dist.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
+ /usr/include/c++/11/bits/random.tcc /usr/include/c++/11/numeric \
+ /usr/include/c++/11/bits/stl_numeric.h \
+ /usr/include/c++/11/pstl/glue_numeric_defs.h

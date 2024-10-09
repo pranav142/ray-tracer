@@ -7,3 +7,7 @@ inline double random_double() {
   static std::mt19937 generator;
   return distribution(generator);
 }
+
+inline double random_double(double min, double max) {
+  return min + random_double() * (max - min);
+}

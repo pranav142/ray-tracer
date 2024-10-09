@@ -53,5 +53,10 @@
   "directory": "/home/pknadimp/ray_tracing",
   "command": "/usr/bin/c++  -I/home/pknadimp/ray_tracing/src  -o CMakeFiles/ray_tracer.dir/src/plane.cpp.o -c /home/pknadimp/ray_tracing/src/plane.cpp",
   "file": "/home/pknadimp/ray_tracing/src/plane.cpp"
+},
+{
+  "directory": "/home/pknadimp/ray_tracing",
+  "command": "/usr/bin/c++  -I/home/pknadimp/ray_tracing/src  -o CMakeFiles/ray_tracer.dir/src/material.cpp.o -c /home/pknadimp/ray_tracing/src/material.cpp",
+  "file": "/home/pknadimp/ray_tracing/src/material.cpp"
 }
 ]

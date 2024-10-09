@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ray_tracer.dir/src/interval.cpp.o.d"
   "CMakeFiles/ray_tracer.dir/src/main.cpp.o"
   "CMakeFiles/ray_tracer.dir/src/main.cpp.o.d"
+  "CMakeFiles/ray_tracer.dir/src/material.cpp.o"
+  "CMakeFiles/ray_tracer.dir/src/material.cpp.o.d"
   "CMakeFiles/ray_tracer.dir/src/plane.cpp.o"
   "CMakeFiles/ray_tracer.dir/src/plane.cpp.o.d"
   "CMakeFiles/ray_tracer.dir/src/ray.cpp.o"

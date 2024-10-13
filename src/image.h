@@ -6,14 +6,6 @@
 #include <vector>
 
 class Image {
-private:
-  size_t m_height;
-  size_t m_width;
-  double m_aspect_ratio;
-  std::vector<Vec3> m_image;
-
-  bool _is_valid_pixel_coord(int x, int y);
-
 public:
   Image(double height, double aspect_ratio)
       : m_height(height),
@@ -26,4 +18,12 @@ public:
 
   void set_pixel(int x, int y, Vec3 color);
   Vec3 get_pixel(int x, int y) const;
+
+private:
+  size_t m_height;
+  size_t m_width;
+  double m_aspect_ratio;
+  std::vector<Vec3> m_image;
+
+  bool _is_valid_pixel_coord(int x, int y);
 };

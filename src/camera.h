@@ -1,30 +1,56 @@
 #pragma once
 
 #include "image.h"
-#include "interval.h"
 #include "vec.h"
 #include "world.h"
 
+struct Viewport {
+  Vec3 center;
+  Vec3 top_left;
+  double height;
+  double width;
+};
+
+struct CoordinateSystem {
+  Vec3 forward;
+  Vec3 right;
+  Vec3 up;
+};
+
+struct Orientation {
+  double pitch_deg;
+  double yaw_deg;
+  double roll_deg;
+};
+
 class Camera {
 public:
-  Camera(double aspect_ratio, double view_port_height, double focal_length,
-         double camera_x, double camera_y, double camera_z,
-         int pixels_per_sample, int max_depth)
-      : m_camera_origin(camera_x, camera_y, camera_z),
-        m_focal_length(focal_length), m_view_port_height(view_port_height),
-        m_pixels_per_sample(pixels_per_sample), m_max_depth(max_depth) {}
+  Camera(Vec3 origin, Orientation orientation, double viewport_height,
+         double focal_length, double aspect_ratio);
+
+  void update();
+
+  const Viewport &get_viewport() const { return m_viewport; }
+  double get_aspect_ratio() const { return m_aspect_ratio; }
+  const CoordinateSystem &get_coordinate_system() const {
+    return m_coordinate_system;
+  }
+  const Vec3 &get_origin() const { return m_origin; }
 
   void render(const World &world, Image &image) const;
 
 private:
-  double m_view_port_height;
+  Vec3 _calculate_viewport_center() const;
+  Viewport _calculate_viewport() const;
+  CoordinateSystem _calculate_coordinate_system() const;
+
+private:
+  double m_viewport_height;
   double m_focal_length;
-  Vec3 m_camera_origin;
-  int m_pixels_per_sample;
-  int m_max_depth;
+  double m_aspect_ratio;
 
-  Vec3 _get_ray_color(const Ray &ray, const World &world, int max_depth) const;
-
-  Ray _get_random_ray_in_pixel(size_t x, size_t y, double dx, double dy,
-                               const Vec3 &view_port_origin) const;
+  Vec3 m_origin;
+  Orientation m_orientation;
+  CoordinateSystem m_coordinate_system;
+  Viewport m_viewport;
 };

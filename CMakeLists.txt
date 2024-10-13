@@ -17,5 +17,6 @@ add_executable ( ray_tracer
     src/world.cpp
     src/plane.cpp
     src/material.cpp
+    src/renderer.cpp
 )
 

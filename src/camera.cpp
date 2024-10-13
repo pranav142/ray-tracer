@@ -1,77 +1,43 @@
 #include "camera.h"
-#include "hittable.h"
-#include "image.h"
-#include "interval.h"
-#include "material.h"
-#include "ray.h"
 #include "utility.h"
 #include "vec.h"
-#include <cstdlib>
+#include <bits/types/cookie_io_functions_t.h>
 
-Vec3 Camera::_get_ray_color(const Ray &ray, const World &world,
-                            int max_depth) const {
-  if (max_depth == 0) {
-    return Vec3(0, 0, 0);
-  }
-
-  HitRecord hit_record;
-  static Interval valid_interval(0.001,
-                                 std::numeric_limits<double>::infinity());
-
-  double is_hit = world.intersects(ray, valid_interval, hit_record);
-  if (!is_hit) {
-    // double a = 0.5 * (ray.direction().y() + 1);
-    // return Vec3(0.7 * (1 - a), 0.5 * (1 - a), 1);
-    return Vec3(0.7, 0.7, 0.7);
-  }
-
-  Vec3 attenuation;
-  Ray scattered_ray;
-
-  std::shared_ptr<Material> material = hit_record.material;
-  if (!material) {
-    return Vec3(0, 0, 0);
-  }
-
-  if (!material->scattered(ray, hit_record, attenuation, scattered_ray)) {
-    return Vec3(0, 0, 0);
-  }
-  return attenuation * _get_ray_color(scattered_ray, world, max_depth - 1);
+Camera::Camera(Vec3 origin, Orientation orientation, double viewport_height,
+               double focal_length, double aspect_ratio)
+    : m_origin(origin), m_orientation(orientation),
+      m_viewport_height(viewport_height), m_focal_length(focal_length),
+      m_aspect_ratio(aspect_ratio) {
+  update();
 }
 
-void Camera::render(const World &world, Image &image) const {
-  double view_port_width = m_view_port_height * image.aspect_ratio();
-
-  double dy = m_view_port_height / image.height();
-  double dx = view_port_width / image.width();
-
-  Vec3 view_port_origin = Vec3(-view_port_width / 2.0 + m_camera_origin.x(),
-                               m_view_port_height / 2.0 + m_camera_origin.y(),
-                               m_camera_origin.z() + m_focal_length);
-
-  for (size_t y = 0; y < image.height(); y++) {
-    std::clog << "Number of lines: " << image.height() - y << '\n';
-    for (size_t x = 0; x < image.width(); x++) {
-      Vec3 final_color(0, 0, 0);
-      for (size_t i = 0; i < m_pixels_per_sample; i++) {
-        Ray ray = _get_random_ray_in_pixel(x, y, dx, dy, view_port_origin);
-        Vec3 ray_color = _get_ray_color(ray, world, 10);
-        final_color = final_color + ray_color;
-      }
-      image.set_pixel(x, y, final_color / m_pixels_per_sample);
-    }
-  }
+void Camera::update() {
+  m_viewport = _calculate_viewport();
+  m_coordinate_system = _calculate_coordinate_system();
 }
 
-Ray Camera::_get_random_ray_in_pixel(size_t x, size_t y, double dx, double dy,
-                                     const Vec3 &view_port_origin) const {
-  double random_offset = random_double();
-  Vec3 ray_direction =
-      Vec3((view_port_origin.x() + dx * x) + random_offset * dx,
-           (view_port_origin.y() - dy * y) + random_offset * dy,
-           view_port_origin.z()) -
-      m_camera_origin;
+Viewport Camera::_calculate_viewport() const {
+  Viewport viewport;
+  viewport.center = _calculate_viewport_center();
+  viewport.height = m_viewport_height;
+  viewport.width = m_viewport_height * m_aspect_ratio;
+  return viewport;
+}
 
-  ray_direction.normalize();
-  return Ray(m_camera_origin, ray_direction);
+CoordinateSystem Camera::_calculate_coordinate_system() const {
+  Vec3 forward = unit_vector(m_viewport.center - m_origin);
+  Vec3 right = unit_vector(cross(forward, Vec3(0, 1, 0)));
+  Vec3 up = cross(right, forward);
+  return CoordinateSystem{forward, right, up};
+}
+
+Vec3 Camera::_calculate_viewport_center() const {
+  double pitch_rad = degree_to_radian(m_orientation.pitch_deg);
+  double yaw_rad = degree_to_radian(m_orientation.yaw_deg);
+
+  double viewport_x = m_focal_length * std::cos(pitch_rad) * std::sin(yaw_rad);
+  double viewport_y = m_focal_length * std::sin(pitch_rad);
+  double viewport_z = -m_focal_length * std::cos(pitch_rad) * std::cos(yaw_rad);
+
+  return m_origin + Vec3(viewport_x, viewport_y, viewport_z);
 }

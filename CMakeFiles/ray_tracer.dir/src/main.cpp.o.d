@@ -174,9 +174,9 @@ CMakeFiles/ray_tracer.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
  /home/pknadimp/ray_tracing/src/camera.h \
- /home/pknadimp/ray_tracing/src/interval.h \
  /home/pknadimp/ray_tracing/src/world.h \
  /home/pknadimp/ray_tracing/src/hittable.h \
+ /home/pknadimp/ray_tracing/src/interval.h \
  /home/pknadimp/ray_tracing/src/ray.h /usr/include/c++/11/memory \
  /usr/include/c++/11/bits/stl_tempbuf.h \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
@@ -200,4 +200,5 @@ CMakeFiles/ray_tracer.dir/src/main.cpp.o: \
  /home/pknadimp/ray_tracing/src/display.h \
  /home/pknadimp/ray_tracing/src/material.h \
  /home/pknadimp/ray_tracing/src/plane.h \
+ /home/pknadimp/ray_tracing/src/renderer.h \
  /home/pknadimp/ray_tracing/src/sphere.h

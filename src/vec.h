@@ -34,6 +34,8 @@ private:
 
 double dot(const Vec3 &a, const Vec3 &b);
 
+Vec3 cross(const Vec3 &a, const Vec3 &b);
+
 Vec3 unit_vector(const Vec3 &vector);
 
 Vec3 random_vector(double min, double max);

@@ -1,5 +1,6 @@
 #pragma once
 
+#include <cmath>
 #include <random>
 
 inline double random_double() {
@@ -11,3 +12,5 @@ inline double random_double() {
 inline double random_double(double min, double max) {
   return min + random_double() * (max - min);
 }
+
+inline double degree_to_radian(double degree) { return degree * M_PI / 180.0; }

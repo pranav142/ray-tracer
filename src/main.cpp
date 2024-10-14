@@ -3,7 +3,6 @@
 #include "camera.h"
 #include "display.h"
 #include "material.h"
-#include "plane.h"
 #include "renderer.h"
 #include "sphere.h"
 #include "world.h"
@@ -29,9 +28,9 @@ World create_example_world() {
 int main() {
   const double aspect_ratio = 16.0 / 9.0;
   const size_t image_height = 500;
-  const double viewport_height = 2.0;
-  const double focal_length = 1.0;
-  const int samples_per_pixel = 1;
+  const double vertical_fov_deg = 90;
+  const double focal_length = 1;
+  const int samples_per_pixel = 8;
   const int max_depth = 10;
 
   Vec3 camera_origin(-1, 1, 1.0);
@@ -39,11 +38,12 @@ int main() {
   double camera_yaw_deg = 30;
 
   Orientation orientation{camera_pitch_deg, camera_yaw_deg, 0};
-
-  Camera camera(camera_origin, orientation, viewport_height, focal_length,
+  Camera camera(camera_origin, orientation, vertical_fov_deg, focal_length,
                 aspect_ratio);
+
+  RayTracer ray_tracer(samples_per_pixel, max_depth);
   World world = create_example_world();
-  Image image = ray_trace_render(world, camera, image_height, samples_per_pixel,
-                                 max_depth);
+  Image image = ray_tracer.render(camera, world, image_height);
+
   ppm_draw_image(image);
 }

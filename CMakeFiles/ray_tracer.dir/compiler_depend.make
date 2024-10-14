@@ -1140,7 +1140,6 @@ CMakeFiles/ray_tracer.dir/src/main.cpp.o: src/main.cpp \
   /usr/include/c++/11/pstl/execution_defs.h \
   src/display.h \
   src/material.h \
-  src/plane.h \
   src/renderer.h \
   src/sphere.h
 
@@ -2723,6 +2722,8 @@ src/sphere.cpp:
 
 src/ray.cpp:
 
+src/plane.h:
+
 src/plane.cpp:
 
 src/material.cpp:
@@ -2730,8 +2731,6 @@ src/material.cpp:
 src/sphere.h:
 
 src/renderer.h:
-
-src/plane.h:
 
 src/material.h:
 

@@ -3,25 +3,29 @@
 #include "camera.h"
 #include "ray.h"
 #include "vec.h"
+#include "world.h"
 
-Image ray_trace_render(const World &world, const Camera &camera,
-                       double image_height, double samples_per_pixel,
-                       int max_depth);
+class RayTracer {
+public:
+  RayTracer(double samples_per_pixel, double max_depth)
+      : m_samples_per_pixel(samples_per_pixel), m_max_depth(max_depth) {}
+  Image render(const Camera &camera, const World &world, double image_height);
 
-static Vec3 accumulate_ray_samples(size_t x, size_t y, double dx, double dy,
-                                   const Camera &camera, const World &world,
-                                   double samples_per_pixel, int max_depth);
+private:
+  void _initialize(const Camera &camera, const Image &image);
+  Vec3 _calculate_top_left_pixel(const Camera &camera) const;
 
-Vec3 render_pixel(size_t x, size_t y, double dx, double dy,
-                  const Camera &camera, const World &world,
-                  double samples_per_pixel, int max_depth);
+  Vec3 _render_pixel(size_t x, size_t y, const Camera &camera,
+                     const World &world) const;
+  Ray _generate_ray(size_t x, size_t y, const Camera &camera) const;
+  Vec3 _get_random_pixel_sample(size_t x, size_t y) const;
+  Vec3 _get_ray_color(const Ray &ray, const World &world, int max_depth) const;
 
-static Ray generate_ray(const Camera &camera, size_t x, size_t y, double dx,
-                        double dy);
+private:
+  double m_samples_per_pixel;
+  int m_max_depth;
 
-static Ray _get_random_ray_in_pixel(size_t x, size_t y, double dx, double dy,
-                                    const Viewport &viewport,
-                                    const CoordinateSystem &cs,
-                                    const Vec3 &camera_origin);
-
-static Vec3 _get_ray_color(const Ray &ray, const World &world, int max_depth);
+  Vec3 m_pixel00_loc;
+  Vec3 m_pixel_delta_u;
+  Vec3 m_pixel_delta_v;
+};

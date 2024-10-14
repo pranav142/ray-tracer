@@ -199,6 +199,5 @@ CMakeFiles/ray_tracer.dir/src/main.cpp.o: \
  /usr/include/c++/11/pstl/execution_defs.h \
  /home/pknadimp/ray_tracing/src/display.h \
  /home/pknadimp/ray_tracing/src/material.h \
- /home/pknadimp/ray_tracing/src/plane.h \
  /home/pknadimp/ray_tracing/src/renderer.h \
  /home/pknadimp/ray_tracing/src/sphere.h

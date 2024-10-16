@@ -1141,7 +1141,34 @@ CMakeFiles/ray_tracer.dir/src/main.cpp.o: src/main.cpp \
   src/display.h \
   src/material.h \
   src/renderer.h \
-  src/sphere.h
+  src/sphere.h \
+  /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/bits/stl_algo.h \
+  /usr/include/c++/11/bits/algorithmfwd.h \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/11/functional \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/erase_if.h \
+  libs/imgui/imgui.h \
+  libs/imgui/imconfig.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/assert.h \
+  libs/imgui/backends/imgui_impl_glfw.h \
+  libs/imgui/backends/imgui_impl_opengl3.h \
+  /usr/include/GLFW/glfw3.h \
+  /usr/include/GL/gl.h \
+  /usr/include/GL/glext.h \
+  /usr/include/KHR/khrplatform.h
 
 CMakeFiles/ray_tracer.dir/src/material.cpp.o: src/material.cpp \
   /usr/include/stdc-predef.h \
@@ -2728,6 +2755,30 @@ src/plane.cpp:
 
 src/material.cpp:
 
+/usr/include/KHR/khrplatform.h:
+
+/usr/include/GL/glext.h:
+
+/usr/include/assert.h:
+
+/usr/include/strings.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/float.h:
+
+libs/imgui/imgui.h:
+
+/usr/include/c++/11/bits/unordered_map.h:
+
+/usr/include/c++/11/bits/hashtable_policy.h:
+
+/usr/include/c++/11/bits/hashtable.h:
+
+/usr/include/c++/11/unordered_map:
+
+/usr/include/c++/11/bits/stl_algo.h:
+
+/usr/include/c++/11/algorithm:
+
 src/sphere.h:
 
 src/renderer.h:
@@ -2747,6 +2798,8 @@ src/material.h:
 /usr/include/c++/11/bits/locale_classes.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
+
+libs/imgui/backends/imgui_impl_opengl3.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
@@ -2832,6 +2885,8 @@ src/camera.cpp:
 
 /usr/include/c++/11/new:
 
+/usr/include/GL/gl.h:
+
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
@@ -2847,6 +2902,8 @@ src/camera.cpp:
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
 /usr/include/c++/11/tr1/special_function_util.h:
+
+/usr/include/c++/11/functional:
 
 /usr/include/linux/errno.h:
 
@@ -2904,6 +2961,8 @@ src/image.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
+/usr/include/c++/11/bits/algorithmfwd.h:
+
 /usr/include/c++/11/pstl/execution_defs.h:
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
@@ -2957,6 +3016,8 @@ src/renderer.cpp:
 /usr/include/c++/11/tuple:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
+/usr/include/c++/11/bits/std_function.h:
 
 src/image.h:
 
@@ -3046,6 +3107,8 @@ src/ray.h:
 
 /usr/include/stdlib.h:
 
+/usr/include/c++/11/bits/erase_if.h:
+
 /usr/include/c++/11/bits/ptr_traits.h:
 
 /usr/include/stdint.h:
@@ -3067,6 +3130,10 @@ src/ray.h:
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/alloca.h:
+
+libs/imgui/backends/imgui_impl_glfw.h:
+
+/usr/include/c++/11/bits/stl_heap.h:
 
 /usr/include/c++/11/bits/std_abs.h:
 
@@ -3108,6 +3175,8 @@ src/hittable.cpp:
 
 /usr/include/c++/11/bits/locale_classes.tcc:
 
+/usr/include/c++/11/bits/node_handle.h:
+
 /usr/include/c++/11/iostream:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
@@ -3124,7 +3193,11 @@ src/hittable.cpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
 
+/usr/include/c++/11/pstl/glue_algorithm_defs.h:
+
 /usr/include/c++/11/stdexcept:
+
+/usr/include/string.h:
 
 /usr/include/c++/11/bits/streambuf.tcc:
 
@@ -3172,7 +3245,11 @@ src/hittable.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
+/usr/include/GLFW/glfw3.h:
+
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+
+/usr/include/c++/11/bits/enable_special_members.h:
 
 /usr/include/c++/11/bits/basic_ios.tcc:
 
@@ -3233,6 +3310,8 @@ src/interval.h:
 /usr/include/c++/11/memory:
 
 /usr/include/c++/11/bits/uses_allocator.h:
+
+libs/imgui/imconfig.h:
 
 /usr/include/c++/11/bits/stl_relops.h:
 

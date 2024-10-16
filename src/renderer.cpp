@@ -49,7 +49,7 @@ Ray RayTracer::_generate_ray(size_t x, size_t y, const Camera &camera) const {
 
 Vec3 RayTracer::_get_random_pixel_sample(size_t x, size_t y) const {
   double random_offset = random_double();
-  random_offset = 0;
+
   Vec3 pixel_sample = m_pixel00_loc + ((x + random_offset) * m_pixel_delta_u) +
                       ((y + random_offset) * m_pixel_delta_v);
   return pixel_sample;

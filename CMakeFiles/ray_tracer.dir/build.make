@@ -284,6 +284,11 @@ ray_tracer: CMakeFiles/ray_tracer.dir/src/plane.cpp.o
 ray_tracer: CMakeFiles/ray_tracer.dir/src/material.cpp.o
 ray_tracer: CMakeFiles/ray_tracer.dir/src/renderer.cpp.o
 ray_tracer: CMakeFiles/ray_tracer.dir/build.make
+ray_tracer: libimgui.a
+ray_tracer: libimgui_backend.a
+ray_tracer: /usr/lib/x86_64-linux-gnu/libglfw.so.3.3
+ray_tracer: /usr/lib/x86_64-linux-gnu/libGLX.so
+ray_tracer: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 ray_tracer: CMakeFiles/ray_tracer.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pknadimp/ray_tracing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable ray_tracer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ray_tracer.dir/link.txt --verbose=$(VERBOSE)

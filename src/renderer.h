@@ -9,6 +9,7 @@ class RayTracer {
 public:
   RayTracer(double samples_per_pixel, double max_depth)
       : m_samples_per_pixel(samples_per_pixel), m_max_depth(max_depth) {}
+
   Image render(const Camera &camera, const World &world, double image_height);
 
 private:

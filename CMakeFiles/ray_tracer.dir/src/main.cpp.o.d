@@ -200,4 +200,24 @@ CMakeFiles/ray_tracer.dir/src/main.cpp.o: \
  /home/pknadimp/ray_tracing/src/display.h \
  /home/pknadimp/ray_tracing/src/material.h \
  /home/pknadimp/ray_tracing/src/renderer.h \
- /home/pknadimp/ray_tracing/src/sphere.h
+ /home/pknadimp/ray_tracing/src/sphere.h /usr/include/c++/11/algorithm \
+ /usr/include/c++/11/bits/stl_algo.h \
+ /usr/include/c++/11/bits/algorithmfwd.h \
+ /usr/include/c++/11/bits/stl_heap.h \
+ /usr/include/c++/11/bits/uniform_int_dist.h \
+ /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
+ /usr/include/c++/11/unordered_map /usr/include/c++/11/bits/hashtable.h \
+ /usr/include/c++/11/bits/hashtable_policy.h \
+ /usr/include/c++/11/bits/enable_special_members.h \
+ /usr/include/c++/11/bits/node_handle.h \
+ /usr/include/c++/11/bits/unordered_map.h \
+ /usr/include/c++/11/bits/erase_if.h \
+ /home/pknadimp/ray_tracing/libs/imgui/imgui.h \
+ /home/pknadimp/ray_tracing/libs/imgui/imconfig.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h /usr/include/string.h \
+ /usr/include/strings.h /usr/include/assert.h \
+ /home/pknadimp/ray_tracing/libs/imgui/backends/imgui_impl_glfw.h \
+ /home/pknadimp/ray_tracing/libs/imgui/backends/imgui_impl_opengl3.h \
+ /usr/include/GLFW/glfw3.h /usr/include/GL/gl.h /usr/include/GL/glext.h \
+ /usr/include/KHR/khrplatform.h

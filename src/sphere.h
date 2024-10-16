@@ -9,14 +9,14 @@
 
 class Sphere : public Hittable {
 public:
-  Sphere(double x, double y, double z, double radius,
-         std::shared_ptr<Material>);
-
-  const Vec3 &origin() const;
-  double radius() const;
+  Sphere(Vec3 origin, double radius, std::shared_ptr<Material> material)
+      : m_origin(origin), m_radius(radius), m_material(material) {}
 
   bool intersects(const Ray &ray, const Interval &valid_interval,
                   HitRecord &hit_record) const override;
+
+  const Vec3 &origin() const { return m_origin; }
+  double radius() const { return m_radius; }
 
 private:
   Vec3 m_origin;

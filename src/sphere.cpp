@@ -1,19 +1,9 @@
 #include "sphere.h"
 #include "hittable.h"
 #include "interval.h"
-#include "material.h"
 #include "vec.h"
 #include <cmath>
 #include <memory>
-
-Sphere::Sphere(double x, double y, double z, double radius,
-               std::shared_ptr<Material> material) {
-  m_origin.set_x(x);
-  m_origin.set_y(y);
-  m_origin.set_z(z);
-  m_radius = radius;
-  m_material = material;
-}
 
 bool Sphere::intersects(const Ray &ray, const Interval &valid_interval,
                         HitRecord &hit_record) const {
@@ -47,7 +37,3 @@ bool Sphere::intersects(const Ray &ray, const Interval &valid_interval,
 
   return true;
 }
-
-const Vec3 &Sphere::origin() const { return m_origin; }
-
-double Sphere::radius() const { return m_radius; }

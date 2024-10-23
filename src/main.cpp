@@ -5,14 +5,18 @@
 #include "material.h"
 #include "renderer.h"
 #include "sphere.h"
+#include "utility.h"
+#include "vec.h"
 #include "world.h"
-#include <algorithm>
 #include <memory>
+#include <ostream>
 
-#include "imgui.h"
-#include "imgui_impl_glfw.h"
-#include "imgui_impl_opengl3.h"
-#include <GLFW/glfw3.h>
+// #include <iostream>
+// #include "glad.h"
+// #include "imgui.h"
+// #include "imgui_impl_glfw.h"
+// #include "imgui_impl_opengl3.h"
+// #include <GLFW/glfw3.h>
 
 static World create_example_world() {
   std::shared_ptr<Material> red_lambertian =
@@ -33,29 +37,75 @@ static World create_example_world() {
   return world;
 }
 
+static World create_sexy_world() {
+  World world;
+  auto ground_material = std::make_shared<Lambertian>(Vec3(0.7, 0.7, 0.7));
+  world.add(std::make_shared<Sphere>(Vec3(0, -1000, 0), 1000, ground_material));
+
+  for (int a = -11; a < 11; a++) {
+    for (int b = -11; b < 11; b++) {
+      auto choose_mat = random_double();
+      Vec3 center(a + 0.9 * random_double(), 0.2, b + 0.9 * random_double());
+
+      if ((center - Vec3(4, 0.2, 0)).magnitude() > 0.9) {
+        std::shared_ptr<Material> sphere_material;
+
+        if (choose_mat < 0.8) {
+          // diffuse
+          auto albedo = Vec3(random_double(), random_double(), random_double());
+          sphere_material = std::make_shared<Lambertian>(albedo);
+          world.add(std::make_shared<Sphere>(center, 0.2, sphere_material));
+        } else if (choose_mat < 0.95) {
+          // metal
+          auto albedo = Vec3(random_double(0.5, 1), random_double(0.5, 1),
+                             random_double(0.5, 1));
+          auto fuzz = random_double(0, 0.5);
+          sphere_material = std::make_shared<Metal>(albedo, fuzz);
+          world.add(std::make_shared<Sphere>(center, 0.2, sphere_material));
+        } else {
+          // glass
+          sphere_material = std::make_shared<Dielectric>(1.5, 0);
+          world.add(std::make_shared<Sphere>(center, 0.2, sphere_material));
+        }
+      }
+    }
+  }
+
+  auto material1 = std::make_shared<Dielectric>(1.5, 0);
+  world.add(std::make_shared<Sphere>(Vec3(0, 1, 0), 1.0, material1));
+
+  auto material2 = std::make_shared<Lambertian>(Vec3(0.4, 0.2, 0.1));
+  world.add(std::make_shared<Sphere>(Vec3(-4, 1, 0), 1.0, material2));
+
+  auto material3 = std::make_shared<Metal>(Vec3(0.7, 0.6, 0.5), 0.0);
+  world.add(std::make_shared<Sphere>(Vec3(4, 1, 0), 1.0, material3));
+
+  return world;
+}
+
 int main() {
   const double aspect_ratio = 16.0 / 9.0;
   const size_t image_height = 500;
-  const double vertical_fov_deg = 90;
-  const double focal_length = 1;
-  const int samples_per_pixel = 1;
+  const double vertical_fov_deg = 20;
+  const double focal_length = 10;
+  const int samples_per_pixel = 500;
   const int max_depth = 10;
+  const double defous_angle = 0;
 
-  Vec3 camera_origin(-1, 1, 1.0);
-  double camera_pitch_deg = -20;
-  double camera_yaw_deg = 30;
+  Vec3 camera_origin(19, 2, 3);
+  double camera_pitch_deg = -3;
+  double camera_yaw_deg = -80;
 
   Orientation orientation{camera_pitch_deg, camera_yaw_deg, 0};
   Camera camera(camera_origin, orientation, vertical_fov_deg, focal_length,
-                aspect_ratio);
+                aspect_ratio, defous_angle);
 
   RayTracer ray_tracer(samples_per_pixel, max_depth);
-  World world = create_example_world();
+  World world = create_sexy_world();
   Image image = ray_tracer.render(camera, world, image_height);
-  GLuint my_image_texture;
-  // ppm_draw_image(image);
+  ppm_draw_image(image);
 
-  //  if (!glfwInit()) {
+  //  if (!glfwInit())
   //    return 1;
   //  }
   //  const char *glsl_version = "#version 130";

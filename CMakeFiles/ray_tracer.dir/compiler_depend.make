@@ -40,6 +40,7 @@ CMakeFiles/ray_tracer.dir/src/camera.cpp.o: src/camera.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/11/exception \
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/exception_ptr.h \
@@ -145,8 +146,11 @@ CMakeFiles/ray_tracer.dir/src/camera.cpp.o: src/camera.cpp \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/cstdio \
   /usr/include/stdio.h \
@@ -155,6 +159,8 @@ CMakeFiles/ray_tracer.dir/src/camera.cpp.o: src/camera.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -311,6 +317,7 @@ CMakeFiles/ray_tracer.dir/src/display.cpp.o: src/display.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -318,7 +325,9 @@ CMakeFiles/ray_tracer.dir/src/display.cpp.o: src/display.cpp \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/specfun.h \
   /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/c++/11/bits/functexcept.h \
@@ -366,6 +375,7 @@ CMakeFiles/ray_tracer.dir/src/display.cpp.o: src/display.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/11/exception \
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/exception_ptr.h \
@@ -432,6 +442,8 @@ CMakeFiles/ray_tracer.dir/src/display.cpp.o: src/display.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -508,6 +520,7 @@ CMakeFiles/ray_tracer.dir/src/hittable.cpp.o: src/hittable.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/11/exception \
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/exception_ptr.h \
@@ -613,8 +626,11 @@ CMakeFiles/ray_tracer.dir/src/hittable.cpp.o: src/hittable.cpp \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/cstdio \
   /usr/include/stdio.h \
@@ -623,6 +639,8 @@ CMakeFiles/ray_tracer.dir/src/hittable.cpp.o: src/hittable.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -716,6 +734,7 @@ CMakeFiles/ray_tracer.dir/src/image.cpp.o: src/image.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/11/exception \
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/exception_ptr.h \
@@ -821,8 +840,11 @@ CMakeFiles/ray_tracer.dir/src/image.cpp.o: src/image.cpp \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/cstdio \
   /usr/include/stdio.h \
@@ -831,6 +853,8 @@ CMakeFiles/ray_tracer.dir/src/image.cpp.o: src/image.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -934,6 +958,7 @@ CMakeFiles/ray_tracer.dir/src/main.cpp.o: src/main.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/11/exception \
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/exception_ptr.h \
@@ -1039,8 +1064,11 @@ CMakeFiles/ray_tracer.dir/src/main.cpp.o: src/main.cpp \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/cstdio \
   /usr/include/stdio.h \
@@ -1049,6 +1077,8 @@ CMakeFiles/ray_tracer.dir/src/main.cpp.o: src/main.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -1142,33 +1172,15 @@ CMakeFiles/ray_tracer.dir/src/main.cpp.o: src/main.cpp \
   src/material.h \
   src/renderer.h \
   src/sphere.h \
-  /usr/include/c++/11/algorithm \
-  /usr/include/c++/11/bits/stl_algo.h \
-  /usr/include/c++/11/bits/algorithmfwd.h \
-  /usr/include/c++/11/bits/stl_heap.h \
+  src/utility.h \
+  /usr/include/c++/11/random \
+  /usr/include/c++/11/bits/random.h \
   /usr/include/c++/11/bits/uniform_int_dist.h \
-  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/11/functional \
-  /usr/include/c++/11/bits/std_function.h \
-  /usr/include/c++/11/unordered_map \
-  /usr/include/c++/11/bits/hashtable.h \
-  /usr/include/c++/11/bits/hashtable_policy.h \
-  /usr/include/c++/11/bits/enable_special_members.h \
-  /usr/include/c++/11/bits/node_handle.h \
-  /usr/include/c++/11/bits/unordered_map.h \
-  /usr/include/c++/11/bits/erase_if.h \
-  libs/imgui/imgui.h \
-  libs/imgui/imconfig.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/assert.h \
-  libs/imgui/backends/imgui_impl_glfw.h \
-  libs/imgui/backends/imgui_impl_opengl3.h \
-  /usr/include/GLFW/glfw3.h \
-  /usr/include/GL/gl.h \
-  /usr/include/GL/glext.h \
-  /usr/include/KHR/khrplatform.h
+  /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
+  /usr/include/c++/11/bits/random.tcc \
+  /usr/include/c++/11/numeric \
+  /usr/include/c++/11/bits/stl_numeric.h \
+  /usr/include/c++/11/pstl/glue_numeric_defs.h
 
 CMakeFiles/ray_tracer.dir/src/material.cpp.o: src/material.cpp \
   /usr/include/stdc-predef.h \
@@ -1211,6 +1223,7 @@ CMakeFiles/ray_tracer.dir/src/material.cpp.o: src/material.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/11/exception \
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/exception_ptr.h \
@@ -1316,8 +1329,11 @@ CMakeFiles/ray_tracer.dir/src/material.cpp.o: src/material.cpp \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/cstdio \
   /usr/include/stdio.h \
@@ -1326,6 +1342,8 @@ CMakeFiles/ray_tracer.dir/src/material.cpp.o: src/material.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -1460,6 +1478,7 @@ CMakeFiles/ray_tracer.dir/src/plane.cpp.o: src/plane.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/11/exception \
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/exception_ptr.h \
@@ -1565,8 +1584,11 @@ CMakeFiles/ray_tracer.dir/src/plane.cpp.o: src/plane.cpp \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/cstdio \
   /usr/include/stdio.h \
@@ -1575,6 +1597,8 @@ CMakeFiles/ray_tracer.dir/src/plane.cpp.o: src/plane.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -1668,6 +1692,7 @@ CMakeFiles/ray_tracer.dir/src/ray.cpp.o: src/ray.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/11/exception \
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/exception_ptr.h \
@@ -1773,8 +1798,11 @@ CMakeFiles/ray_tracer.dir/src/ray.cpp.o: src/ray.cpp \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/cstdio \
   /usr/include/stdio.h \
@@ -1783,6 +1811,8 @@ CMakeFiles/ray_tracer.dir/src/ray.cpp.o: src/ray.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -1853,6 +1883,7 @@ CMakeFiles/ray_tracer.dir/src/renderer.cpp.o: src/renderer.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/11/exception \
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/exception_ptr.h \
@@ -1958,8 +1989,11 @@ CMakeFiles/ray_tracer.dir/src/renderer.cpp.o: src/renderer.cpp \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/cstdio \
   /usr/include/stdio.h \
@@ -1968,6 +2002,8 @@ CMakeFiles/ray_tracer.dir/src/renderer.cpp.o: src/renderer.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -2065,7 +2101,195 @@ CMakeFiles/ray_tracer.dir/src/renderer.cpp.o: src/renderer.cpp \
   /usr/include/c++/11/bits/random.tcc \
   /usr/include/c++/11/numeric \
   /usr/include/c++/11/bits/stl_numeric.h \
-  /usr/include/c++/11/pstl/glue_numeric_defs.h
+  /usr/include/c++/11/pstl/glue_numeric_defs.h \
+  /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/bits/stl_algo.h \
+  /usr/include/c++/11/bits/algorithmfwd.h \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/11/functional \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/erase_if.h \
+  /usr/include/c++/11/execution \
+  /usr/include/c++/11/pstl/glue_execution_defs.h \
+  /usr/include/c++/11/pstl/algorithm_impl.h \
+  /usr/include/c++/11/iterator \
+  /usr/include/c++/11/bits/stream_iterator.h \
+  /usr/include/c++/11/pstl/execution_impl.h \
+  /usr/include/c++/11/pstl/memory_impl.h \
+  /usr/include/c++/11/pstl/unseq_backend_simd.h \
+  /usr/include/c++/11/pstl/utils.h \
+  /usr/include/c++/11/pstl/parallel_backend_utils.h \
+  /usr/include/c++/11/pstl/parallel_backend.h \
+  /usr/include/c++/11/pstl/parallel_backend_tbb.h \
+  /usr/include/tbb/blocked_range.h \
+  /usr/include/oneapi/tbb/blocked_range.h \
+  /usr/include/oneapi/tbb/detail/_range_common.h \
+  /usr/include/oneapi/tbb/detail/_config.h \
+  /usr/include/oneapi/tbb/detail/_export.h \
+  /usr/include/oneapi/tbb/detail/_utils.h \
+  /usr/include/c++/11/atomic \
+  /usr/include/oneapi/tbb/detail/_assert.h \
+  /usr/include/oneapi/tbb/detail/_machine.h \
+  /usr/include/c++/11/climits \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+  /usr/include/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/linux/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/immintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/x86gprintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/ia32intrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/adxintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/bmiintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/bmi2intrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/cetintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/cldemoteintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/clflushoptintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/clwbintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/clzerointrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/enqcmdintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/fxsrintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/lzcntintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/lwpintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/movdirintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mwaitintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mwaitxintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/pconfigintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/popcntintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/pkuintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/rdseedintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/rtmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/serializeintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/sgxintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/tbmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/tsxldtrkintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/uintrintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/waitpkgintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/wbnoinvdintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/xsaveintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/xsavecintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/xsaveoptintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/xsavesintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/xtestintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/hresetintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
+  /usr/include/c++/11/stdlib.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/pmmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/tmmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/smmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/wmmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avxintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avxvnniintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx2intrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512fintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512erintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512pfintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512cdintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vlintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bwintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512dqintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vlbwintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vldqintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512ifmaintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512ifmavlintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmiintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmivlintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx5124fmapsintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx5124vnniwintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vpopcntdqintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmi2intrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmi2vlintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vnniintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vnnivlintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vpopcntdqvlintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bitalgintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vp2intersectintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vp2intersectvlintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/shaintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/fmaintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/f16cintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/gfniintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/vaesintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/vpclmulqdqintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bf16vlintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bf16intrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/amxtileintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/amxint8intrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/amxbf16intrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/prfchwintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/keylockerintrin.h \
+  /usr/include/c++/11/thread \
+  /usr/include/c++/11/bits/std_thread.h \
+  /usr/include/c++/11/bits/this_thread_sleep.h \
+  /usr/include/c++/11/chrono \
+  /usr/include/c++/11/ratio \
+  /usr/include/c++/11/ctime \
+  /usr/include/c++/11/bits/parse_numbers.h \
+  /usr/include/oneapi/tbb/detail/_namespace_injection.h \
+  /usr/include/oneapi/tbb/version.h \
+  /usr/include/oneapi/tbb/detail/_config.h \
+  /usr/include/tbb/parallel_for.h \
+  /usr/include/oneapi/tbb/parallel_for.h \
+  /usr/include/oneapi/tbb/detail/_exception.h \
+  /usr/include/oneapi/tbb/detail/_task.h \
+  /usr/include/oneapi/tbb/detail/_template_helpers.h \
+  /usr/include/oneapi/tbb/detail/_small_object_pool.h \
+  /usr/include/oneapi/tbb/profiling.h \
+  /usr/include/oneapi/tbb/detail/_string_resource.h \
+  /usr/include/c++/11/mutex \
+  /usr/include/c++/11/bits/std_mutex.h \
+  /usr/include/c++/11/bits/unique_lock.h \
+  /usr/include/oneapi/tbb/detail/_small_object_pool.h \
+  /usr/include/oneapi/tbb/profiling.h \
+  /usr/include/oneapi/tbb/partitioner.h \
+  /usr/include/oneapi/tbb/detail/_aligned_space.h \
+  /usr/include/oneapi/tbb/detail/_utils.h \
+  /usr/include/oneapi/tbb/detail/_template_helpers.h \
+  /usr/include/oneapi/tbb/cache_aligned_allocator.h \
+  /usr/include/c++/11/memory_resource \
+  /usr/include/c++/11/shared_mutex \
+  /usr/include/c++/11/bits/uses_allocator_args.h \
+  /usr/include/oneapi/tbb/task_group.h \
+  /usr/include/oneapi/tbb/detail/_assert.h \
+  /usr/include/oneapi/tbb/detail/_intrusive_list_node.h \
+  /usr/include/oneapi/tbb/task_arena.h \
+  /usr/include/oneapi/tbb/info.h \
+  /usr/include/oneapi/tbb/blocked_range.h \
+  /usr/include/tbb/parallel_reduce.h \
+  /usr/include/oneapi/tbb/parallel_reduce.h \
+  /usr/include/tbb/parallel_scan.h \
+  /usr/include/oneapi/tbb/parallel_scan.h \
+  /usr/include/tbb/parallel_invoke.h \
+  /usr/include/oneapi/tbb/parallel_invoke.h \
+  /usr/include/tbb/task_arena.h \
+  /usr/include/oneapi/tbb/task_arena.h \
+  /usr/include/tbb/tbb_allocator.h \
+  /usr/include/oneapi/tbb/tbb_allocator.h \
+  /usr/include/oneapi/tbb/detail/_utils.h \
+  /usr/include/tbb/task.h \
+  /usr/include/oneapi/tbb/task.h \
+  /usr/include/c++/11/pstl/parallel_impl.h \
+  /usr/include/c++/11/pstl/numeric_impl.h \
+  /usr/include/c++/11/pstl/pstl_config.h \
+  /usr/include/c++/11/pstl/algorithm_fwd.h \
+  /usr/include/c++/11/pstl/glue_algorithm_impl.h \
+  /usr/include/c++/11/pstl/numeric_fwd.h \
+  /usr/include/c++/11/pstl/glue_numeric_impl.h \
+  /usr/include/c++/11/pstl/glue_memory_impl.h
 
 CMakeFiles/ray_tracer.dir/src/sphere.cpp.o: src/sphere.cpp \
   /usr/include/stdc-predef.h \
@@ -2108,6 +2332,7 @@ CMakeFiles/ray_tracer.dir/src/sphere.cpp.o: src/sphere.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/11/exception \
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/exception_ptr.h \
@@ -2213,8 +2438,11 @@ CMakeFiles/ray_tracer.dir/src/sphere.cpp.o: src/sphere.cpp \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/cstdio \
   /usr/include/stdio.h \
@@ -2223,6 +2451,8 @@ CMakeFiles/ray_tracer.dir/src/sphere.cpp.o: src/sphere.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -2341,6 +2571,7 @@ CMakeFiles/ray_tracer.dir/src/vec.cpp.o: src/vec.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/11/exception \
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/exception_ptr.h \
@@ -2446,8 +2677,11 @@ CMakeFiles/ray_tracer.dir/src/vec.cpp.o: src/vec.cpp \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/cstdio \
   /usr/include/stdio.h \
@@ -2456,6 +2690,8 @@ CMakeFiles/ray_tracer.dir/src/vec.cpp.o: src/vec.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -2568,6 +2804,7 @@ CMakeFiles/ray_tracer.dir/src/world.cpp.o: src/world.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/11/exception \
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/exception_ptr.h \
@@ -2673,8 +2910,11 @@ CMakeFiles/ray_tracer.dir/src/world.cpp.o: src/world.cpp \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/cstdio \
   /usr/include/stdio.h \
@@ -2683,6 +2923,8 @@ CMakeFiles/ray_tracer.dir/src/world.cpp.o: src/world.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -2747,25 +2989,205 @@ src/world.cpp:
 
 src/sphere.cpp:
 
-src/ray.cpp:
+/usr/include/c++/11/pstl/glue_memory_impl.h:
 
-src/plane.h:
+/usr/include/c++/11/pstl/glue_numeric_impl.h:
 
-src/plane.cpp:
+/usr/include/c++/11/pstl/glue_algorithm_impl.h:
 
-src/material.cpp:
+/usr/include/c++/11/pstl/numeric_impl.h:
 
-/usr/include/KHR/khrplatform.h:
+/usr/include/tbb/task.h:
 
-/usr/include/GL/glext.h:
+/usr/include/oneapi/tbb/tbb_allocator.h:
 
-/usr/include/assert.h:
+/usr/include/oneapi/tbb/parallel_invoke.h:
 
-/usr/include/strings.h:
+/usr/include/oneapi/tbb/parallel_scan.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/float.h:
+/usr/include/oneapi/tbb/parallel_reduce.h:
 
-libs/imgui/imgui.h:
+/usr/include/oneapi/tbb/info.h:
+
+/usr/include/c++/11/bits/uses_allocator_args.h:
+
+/usr/include/c++/11/shared_mutex:
+
+/usr/include/oneapi/tbb/cache_aligned_allocator.h:
+
+/usr/include/oneapi/tbb/detail/_aligned_space.h:
+
+/usr/include/oneapi/tbb/partitioner.h:
+
+/usr/include/c++/11/mutex:
+
+/usr/include/oneapi/tbb/profiling.h:
+
+/usr/include/oneapi/tbb/detail/_small_object_pool.h:
+
+/usr/include/oneapi/tbb/version.h:
+
+/usr/include/oneapi/tbb/detail/_namespace_injection.h:
+
+/usr/include/c++/11/ctime:
+
+/usr/include/c++/11/ratio:
+
+/usr/include/c++/11/thread:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/amxbf16intrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/amxtileintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bf16vlintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/vaesintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/gfniintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/f16cintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/fmaintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/shaintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vp2intersectvlintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vp2intersectintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vnniintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmi2vlintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vpopcntdqintrin.h:
+
+/usr/include/oneapi/tbb/parallel_for.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx5124vnniwintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmivlintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmiintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512ifmaintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vldqintrin.h:
+
+/usr/include/oneapi/tbb/detail/_string_resource.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512dqintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vlintrin.h:
+
+/usr/include/oneapi/tbb/detail/_intrusive_list_node.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512cdintrin.h:
+
+/usr/include/oneapi/tbb/detail/_task.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512erintrin.h:
+
+/usr/include/tbb/task_arena.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512fintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avxintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/wmmintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/pmmintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/hresetintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/xsavecintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/xsaveintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512pfintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/wbnoinvdintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/waitpkgintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/tsxldtrkintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/tbmintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/sgxintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/serializeintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/rtmintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/pkuintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/popcntintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/pconfigintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mwaitintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/movdirintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/lwpintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/lzcntintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/enqcmdintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/clzerointrin.h:
+
+/usr/include/c++/11/bits/parse_numbers.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/clflushoptintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/bmi2intrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/ia32intrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/immintrin.h:
+
+/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/local_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
+
+/usr/include/oneapi/tbb/detail/_machine.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/adxintrin.h:
+
+/usr/include/c++/11/atomic:
+
+/usr/include/oneapi/tbb/detail/_config.h:
+
+/usr/include/oneapi/tbb/detail/_range_common.h:
+
+/usr/include/oneapi/tbb/blocked_range.h:
+
+/usr/include/tbb/blocked_range.h:
+
+/usr/include/c++/11/stdlib.h:
+
+/usr/include/c++/11/pstl/parallel_backend_tbb.h:
+
+/usr/include/c++/11/pstl/parallel_backend_utils.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bitalgintrin.h:
+
+/usr/include/c++/11/pstl/utils.h:
+
+/usr/include/c++/11/bits/stream_iterator.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/tmmintrin.h:
 
 /usr/include/c++/11/bits/unordered_map.h:
 
@@ -2775,9 +3197,21 @@ libs/imgui/imgui.h:
 
 /usr/include/c++/11/unordered_map:
 
+/usr/include/tbb/parallel_invoke.h:
+
 /usr/include/c++/11/bits/stl_algo.h:
 
 /usr/include/c++/11/algorithm:
+
+src/ray.cpp:
+
+src/plane.h:
+
+src/plane.cpp:
+
+src/material.cpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx5124fmapsintrin.h:
 
 src/sphere.h:
 
@@ -2785,13 +3219,21 @@ src/renderer.h:
 
 src/material.h:
 
-/usr/include/c++/11/bits/cxxabi_forced.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h:
+
+src/main.cpp:
+
+src/image.cpp:
+
+src/hittable.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
-/usr/include/c++/11/backward/binders.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/fxsrintrin.h:
+
+/usr/include/c++/11/bits/cxxabi_forced.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
 
@@ -2799,15 +3241,17 @@ src/material.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
-libs/imgui/backends/imgui_impl_opengl3.h:
-
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
 /usr/include/c++/11/numeric:
 
+/usr/include/linux/limits.h:
+
 /usr/include/c++/11/bits/basic_string.h:
 
 /usr/include/c++/11/bits/shared_ptr_base.h:
+
+/usr/include/tbb/parallel_reduce.h:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
@@ -2821,10 +3265,6 @@ libs/imgui/backends/imgui_impl_opengl3.h:
 
 src/utility.h:
 
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/usr/include/x86_64-linux-gnu/bits/time.h:
-
 /usr/include/c++/11/ext/atomicity.h:
 
 /usr/include/c++/11/bits/stl_pair.h:
@@ -2837,13 +3277,17 @@ src/utility.h:
 
 src/camera.cpp:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vlbwintrin.h:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
 
 /usr/include/c++/11/ext/concurrence.h:
 
 /usr/include/c++/11/bits/ios_base.h:
 
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+/usr/include/c++/11/pstl/parallel_backend.h:
+
+/usr/include/c++/11/pstl/glue_execution_defs.h:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
@@ -2851,7 +3295,11 @@ src/camera.cpp:
 
 /usr/include/locale.h:
 
+/usr/include/tbb/parallel_for.h:
+
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/usr/include/c++/11/pstl/algorithm_fwd.h:
 
 /usr/include/c++/11/bits/localefwd.h:
 
@@ -2859,9 +3307,13 @@ src/camera.cpp:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avxvnniintrin.h:
+
 /usr/include/c++/11/cctype:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/bmiintrin.h:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
@@ -2883,19 +3335,37 @@ src/camera.cpp:
 
 /usr/include/c++/11/bits/stl_iterator.h:
 
+/usr/include/c++/11/climits:
+
 /usr/include/c++/11/new:
 
-/usr/include/GL/gl.h:
+/usr/include/c++/11/pstl/unseq_backend_simd.h:
+
+/usr/include/ctype.h:
+
+/usr/include/c++/11/bits/std_thread.h:
+
+/usr/include/c++/11/bits/cpp_type_traits.h:
+
+/usr/include/c++/11/bits/stl_iterator_base_funcs.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
+/usr/include/oneapi/tbb/detail/_template_helpers.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bwintrin.h:
 
 /usr/include/wchar.h:
 
 /usr/include/c++/11/bits/cxxabi_init_exception.h:
 
+/usr/include/tbb/parallel_scan.h:
+
 /usr/include/c++/11/bits/invoke.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/xtestintrin.h:
 
 /usr/include/c++/11/cstdint:
 
@@ -2907,9 +3377,13 @@ src/camera.cpp:
 
 /usr/include/linux/errno.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:
+
 /usr/include/c++/11/debug/debug.h:
 
 /usr/include/features-time64.h:
+
+/usr/include/c++/11/pstl/execution_impl.h:
 
 /usr/include/c++/11/pstl/pstl_config.h:
 
@@ -2925,11 +3399,17 @@ src/camera.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/amxint8intrin.h:
+
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
-src/image.cpp:
+/usr/include/c++/11/pstl/parallel_impl.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/vpclmulqdqintrin.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
@@ -2937,7 +3417,17 @@ src/image.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
+/usr/include/c++/11/backward/binders.h:
+
+/usr/include/x86_64-linux-gnu/bits/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/include/oneapi/tbb/detail/_utils.h:
+
 /usr/include/c++/11/bits/stringfwd.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/prfchwintrin.h:
 
 /usr/include/c++/11/bits/stl_function.h:
 
@@ -2949,25 +3439,37 @@ src/image.cpp:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/uintrintrin.h:
 
-/usr/include/c++/11/cwchar:
+/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
 
 /usr/include/c++/11/bits/stl_algobase.h:
 
+/usr/include/oneapi/tbb/task_group.h:
+
 /usr/include/c++/11/bits/nested_exception.h:
 
+/usr/include/c++/11/chrono:
+
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/xsavesintrin.h:
 
 /usr/include/c++/11/bits/algorithmfwd.h:
 
 /usr/include/c++/11/pstl/execution_defs.h:
 
+src/interval.cpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vnnivlintrin.h:
 
 /usr/include/c++/11/ext/type_traits.h:
 
@@ -2999,7 +3501,13 @@ src/renderer.cpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vpopcntdqvlintrin.h:
+
 /usr/include/c++/11/exception:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/clwbintrin.h:
+
+/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
 /usr/include/c++/11/string:
 
@@ -3008,6 +3516,8 @@ src/renderer.cpp:
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mwaitxintrin.h:
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
@@ -3031,9 +3541,21 @@ src/image.h:
 
 /usr/include/c++/11/cstdlib:
 
+/usr/include/c++/11/bits/std_mutex.h:
+
 /usr/include/c++/11/tr1/poly_laguerre.tcc:
 
 /usr/include/c++/11/bit:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmi2intrin.h:
+
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
+
+/usr/include/c++/11/bits/specfun.h:
+
+/usr/include/c++/11/iterator:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
@@ -3061,6 +3583,8 @@ src/camera.h:
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
+/usr/include/oneapi/tbb/detail/_exception.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
 /usr/include/c++/11/typeinfo:
@@ -3068,6 +3592,8 @@ src/camera.h:
 /usr/include/c++/11/bits/move.h:
 
 /usr/include/c++/11/bits/hash_bytes.h:
+
+/usr/include/oneapi/tbb/task.h:
 
 /usr/include/c++/11/bits/string_view.tcc:
 
@@ -3085,17 +3611,13 @@ src/ray.h:
 
 /usr/include/c++/11/streambuf:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/smmintrin.h:
+
 /usr/include/c++/11/iosfwd:
 
 /usr/include/c++/11/initializer_list:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
-
-/usr/include/ctype.h:
-
-/usr/include/c++/11/bits/cpp_type_traits.h:
-
-/usr/include/c++/11/bits/stl_iterator_base_funcs.h:
 
 /usr/include/stdc-predef.h:
 
@@ -3106,6 +3628,8 @@ src/ray.h:
 /usr/include/c++/11/bits/functional_hash.h:
 
 /usr/include/stdlib.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx2intrin.h:
 
 /usr/include/c++/11/bits/erase_if.h:
 
@@ -3119,6 +3643,10 @@ src/ray.h:
 
 /usr/include/c++/11/ext/aligned_buffer.h:
 
+src/display.h:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
 /usr/include/c++/11/bits/stl_construct.h:
 
 /usr/include/c++/11/bits/shared_ptr.h:
@@ -3129,9 +3657,15 @@ src/ray.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
+/usr/include/c++/11/cwchar:
+
+/usr/include/x86_64-linux-gnu/bits/select2.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512ifmavlintrin.h:
+
 /usr/include/alloca.h:
 
-libs/imgui/backends/imgui_impl_glfw.h:
+/usr/include/c++/11/cwctype:
 
 /usr/include/c++/11/bits/stl_heap.h:
 
@@ -3139,9 +3673,19 @@ libs/imgui/backends/imgui_impl_glfw.h:
 
 /usr/include/c++/11/cstdio:
 
+/usr/include/oneapi/tbb/detail/_export.h:
+
 /usr/include/stdio.h:
 
-src/main.cpp:
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:
+
+/usr/include/c++/11/bits/this_thread_sleep.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/c++/11/bits/locale_facets.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
@@ -3167,7 +3711,7 @@ src/main.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
-src/hittable.cpp:
+/usr/include/c++/11/execution:
 
 /usr/include/c++/11/bits/charconv.h:
 
@@ -3181,7 +3725,13 @@ src/hittable.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/cetintrin.h:
+
 /usr/include/c++/11/system_error:
+
+/usr/include/c++/11/pstl/algorithm_impl.h:
 
 /usr/include/c++/11/cstddef:
 
@@ -3197,7 +3747,7 @@ src/hittable.cpp:
 
 /usr/include/c++/11/stdexcept:
 
-/usr/include/string.h:
+/usr/include/c++/11/pstl/memory_impl.h:
 
 /usr/include/c++/11/bits/streambuf.tcc:
 
@@ -3209,25 +3759,27 @@ src/hittable.cpp:
 
 /usr/include/c++/11/bits/basic_ios.h:
 
+/usr/include/oneapi/tbb/task_arena.h:
+
 /usr/include/c++/11/bits/exception.h:
 
 /usr/include/c++/11/bits/locale_facets.h:
 
 /usr/include/c++/11/tr1/poly_hermite.tcc:
 
-/usr/include/c++/11/cwctype:
+/usr/include/tbb/tbb_allocator.h:
 
 /usr/include/c++/11/bits/streambuf_iterator.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/cldemoteintrin.h:
+
 /usr/include/c++/11/random:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/include/c++/11/bits/locale_facets.tcc:
-
 /usr/include/c++/11/istream:
+
+/usr/include/oneapi/tbb/detail/_assert.h:
 
 /usr/include/c++/11/bits/istream.tcc:
 
@@ -3245,9 +3797,9 @@ src/hittable.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
-/usr/include/GLFW/glfw3.h:
-
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+
+/usr/include/c++/11/pstl/numeric_fwd.h:
 
 /usr/include/c++/11/bits/enable_special_members.h:
 
@@ -3265,8 +3817,6 @@ src/hittable.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
-/usr/include/c++/11/bits/specfun.h:
-
 /usr/include/c++/11/limits:
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
@@ -3274,6 +3824,10 @@ src/hittable.cpp:
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
 
 /usr/include/c++/11/tr1/legendre_function.tcc:
+
+/usr/include/c++/11/memory_resource:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/x86gprintrin.h:
 
 /usr/include/c++/11/tr1/riemann_zeta.tcc:
 
@@ -3283,7 +3837,11 @@ src/hittable.cpp:
 
 /usr/include/c++/11/bits/stl_uninitialized.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bf16intrin.h:
+
 /usr/include/c++/11/backward/auto_ptr.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/keylockerintrin.h:
 
 /usr/include/c++/11/bits/stl_numeric.h:
 
@@ -3291,17 +3849,23 @@ src/hittable.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
+/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
+
 /usr/include/c++/11/bits/stl_bvector.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/xsaveoptintrin.h:
 
 /usr/include/c++/11/bits/vector.tcc:
 
-/usr/include/c++/11/bits/unique_ptr.h:
-
 src/display.cpp:
+
+/usr/include/c++/11/bits/unique_ptr.h:
 
 src/world.h:
 
 /usr/include/c++/11/bits/stl_raw_storage_iter.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/rdseedintrin.h:
 
 src/hittable.h:
 
@@ -3309,9 +3873,11 @@ src/interval.h:
 
 /usr/include/c++/11/memory:
 
+/usr/include/c++/11/bits/unique_lock.h:
+
 /usr/include/c++/11/bits/uses_allocator.h:
 
-libs/imgui/imconfig.h:
+/usr/include/limits.h:
 
 /usr/include/c++/11/bits/stl_relops.h:
 
@@ -3322,11 +3888,3 @@ libs/imgui/imconfig.h:
 /usr/include/c++/11/bits/refwrap.h:
 
 /usr/include/c++/11/bits/shared_ptr_atomic.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
-src/interval.cpp:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
-src/display.h:

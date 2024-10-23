@@ -4,7 +4,6 @@
 #include "vec.h"
 #include "world.h"
 
-// turn view port into a class
 struct Viewport {
   Vec3 center;
   double height;
@@ -25,10 +24,16 @@ struct Orientation {
   double roll_deg;
 };
 
+struct DefocusDisk {
+  double radius;
+  Vec3 u;
+  Vec3 v;
+};
+
 class Camera {
 public:
   Camera(Vec3 origin, Orientation orientation, double viewport_height,
-         double focal_length, double aspect_ratio);
+         double focal_length, double aspect_ratio, double defocus_angle);
 
   void update();
 
@@ -40,6 +45,7 @@ public:
   const Viewport &get_viewport() const { return m_viewport; }
   double get_aspect_ratio() const { return m_aspect_ratio; }
   const Vec3 &get_origin() const { return m_origin; }
+  const DefocusDisk &get_defocus_disk() const { return m_defocus_disk; }
 
 private:
   CoordinateSystem _calculate_coordinate_system() const;
@@ -48,14 +54,17 @@ private:
   double _calculate_viewport_height() const;
   Vec3 _calculate_viewport_center() const;
   Viewport _calculate_viewport() const;
+  DefocusDisk _calculate_defocus_disk() const;
 
 private:
-  double m_vertical_fov_deg;
-  double m_focal_length;
-  double m_aspect_ratio;
-
-  Vec3 m_origin;
   Orientation m_orientation;
   CoordinateSystem m_coordinate_system;
   Viewport m_viewport;
+  DefocusDisk m_defocus_disk;
+
+  Vec3 m_origin;
+  double m_vertical_fov_deg;
+  double m_focal_length;
+  double m_aspect_ratio;
+  double m_defocus_angle;
 };

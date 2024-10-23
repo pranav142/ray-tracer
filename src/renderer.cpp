@@ -7,14 +7,35 @@
 #include "utility.h"
 #include "vec.h"
 #include "world.h"
+#include <algorithm>
 #include <cstdlib>
+#include <execution>
 #include <iostream>
 #include <memory>
+#include <mutex>
 
 Image RayTracer::render(const Camera &camera, const World &world,
                         double image_height) {
   Image image(image_height, camera.get_aspect_ratio());
   _initialize(camera, image);
+
+#define MT 1
+#ifdef MT
+  size_t width = image.width();
+  size_t height = image.height();
+
+  // Sequential loop for `y`
+  for (size_t y = 0; y < height; y++) {
+    std::clog << "Number of lines remaining: " << height - y << '\n';
+    std::vector<size_t> x_indices(width);
+    std::iota(x_indices.begin(), x_indices.end(), 0);
+    std::for_each(std::execution::par, x_indices.begin(), x_indices.end(),
+                  [&](size_t x) {
+                    Vec3 pixel_color = _render_pixel(x, y, camera, world);
+                    image.set_pixel(x, y, pixel_color);
+                  });
+  }
+#else
 
   for (size_t y = 0; y < image.height(); y++) {
     std::clog << "Number of lines remaining: " << image.height() - y << '\n';
@@ -23,7 +44,7 @@ Image RayTracer::render(const Camera &camera, const World &world,
       image.set_pixel(x, y, pixel_color);
     }
   }
-
+#endif
   return image;
 }
 
@@ -39,8 +60,15 @@ Vec3 RayTracer::_render_pixel(size_t x, size_t y, const Camera &camera,
   return average_color / m_samples_per_pixel;
 }
 
+Vec3 RayTracer::_get_ray_origin(const Camera &camera) const {
+  DefocusDisk defocus_disk = camera.get_defocus_disk();
+  double random_offset = random_double(-1, 1);
+  return camera.get_origin() + random_offset * defocus_disk.u +
+         random_offset * defocus_disk.v;
+}
+
 Ray RayTracer::_generate_ray(size_t x, size_t y, const Camera &camera) const {
-  Vec3 ray_origin = camera.get_origin();
+  Vec3 ray_origin = _get_ray_origin(camera);
   Vec3 ray_direction = _get_random_pixel_sample(x, y) - ray_origin;
 
   ray_direction.normalize();

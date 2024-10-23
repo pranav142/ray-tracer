@@ -11,6 +11,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
   "CMakeLists.txt"
+  "/usr/lib/x86_64-linux-gnu/cmake/TBB/TBBConfig.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/TBB/TBBConfigVersion.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/TBB/TBBTargets-none.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/TBB/TBBTargets.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/glfw3/glfw3Config.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/glfw3/glfw3ConfigVersion.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/glfw3/glfw3Targets-none.cmake"
@@ -53,4 +57,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ray_tracer.dir/DependInfo.cmake"
   "CMakeFiles/imgui.dir/DependInfo.cmake"
   "CMakeFiles/imgui_backend.dir/DependInfo.cmake"
+  "CMakeFiles/glad.dir/DependInfo.cmake"
   )

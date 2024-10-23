@@ -2,18 +2,30 @@
 #include "utility.h"
 #include "vec.h"
 #include <bits/types/cookie_io_functions_t.h>
+#include <cmath>
 
 Camera::Camera(Vec3 origin, Orientation orientation, double vertical_fov_deg,
-               double focal_length, double aspect_ratio)
+               double focal_length, double aspect_ratio, double defocus_angle)
     : m_origin(origin), m_orientation(orientation),
       m_vertical_fov_deg(vertical_fov_deg), m_focal_length(focal_length),
-      m_aspect_ratio(aspect_ratio) {
+      m_aspect_ratio(aspect_ratio), m_defocus_angle(defocus_angle) {
   update();
 }
 
 void Camera::update() {
   m_coordinate_system = _calculate_coordinate_system();
   m_viewport = _calculate_viewport();
+  m_defocus_disk = _calculate_defocus_disk();
+}
+
+DefocusDisk Camera::_calculate_defocus_disk() const {
+  DefocusDisk defocus_disk;
+  double theta = degree_to_radian(m_defocus_angle / 2.0);
+  defocus_disk.radius =
+      m_defocus_angle <= 0 ? 0 : m_focal_length * std::tan(theta);
+  defocus_disk.u = m_coordinate_system.right * defocus_disk.radius;
+  defocus_disk.v = m_coordinate_system.up * defocus_disk.radius;
+  return defocus_disk;
 }
 
 Viewport Camera::_calculate_viewport() const {

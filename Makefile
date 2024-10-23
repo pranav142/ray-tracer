@@ -155,6 +155,43 @@ imgui_backend/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui_backend.dir/build.make CMakeFiles/imgui_backend.dir/build
 .PHONY : imgui_backend/fast
 
+#=============================================================================
+# Target rules for targets named glad
+
+# Build rule for target.
+glad: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glad
+.PHONY : glad
+
+# fast build rule for target.
+glad/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/build
+.PHONY : glad/fast
+
+libs/GLAD/glad.o: libs/GLAD/glad.c.o
+.PHONY : libs/GLAD/glad.o
+
+# target to build an object file
+libs/GLAD/glad.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/libs/GLAD/glad.c.o
+.PHONY : libs/GLAD/glad.c.o
+
+libs/GLAD/glad.i: libs/GLAD/glad.c.i
+.PHONY : libs/GLAD/glad.i
+
+# target to preprocess a source file
+libs/GLAD/glad.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/libs/GLAD/glad.c.i
+.PHONY : libs/GLAD/glad.c.i
+
+libs/GLAD/glad.s: libs/GLAD/glad.c.s
+.PHONY : libs/GLAD/glad.s
+
+# target to generate assembly for a file
+libs/GLAD/glad.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/libs/GLAD/glad.c.s
+.PHONY : libs/GLAD/glad.c.s
+
 libs/imgui/backends/imgui_impl_glfw.o: libs/imgui/backends/imgui_impl_glfw.cpp.o
 .PHONY : libs/imgui/backends/imgui_impl_glfw.o
 
@@ -643,9 +680,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... glad"
 	@echo "... imgui"
 	@echo "... imgui_backend"
 	@echo "... ray_tracer"
+	@echo "... libs/GLAD/glad.o"
+	@echo "... libs/GLAD/glad.i"
+	@echo "... libs/GLAD/glad.s"
 	@echo "... libs/imgui/backends/imgui_impl_glfw.o"
 	@echo "... libs/imgui/backends/imgui_impl_glfw.i"
 	@echo "... libs/imgui/backends/imgui_impl_glfw.s"

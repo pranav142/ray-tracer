@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/pknadimp/ray_tracing/src -I/home/pknadimp/ray_tracing/libs/imgui -I/home/pknadimp/ray_tracing/libs/imgui/backends
+CXX_INCLUDES = -I/home/pknadimp/ray_tracing/src -I/home/pknadimp/ray_tracing/libs/imgui -I/home/pknadimp/ray_tracing/libs/imgui/backends -I/home/pknadimp/ray_tracing/libs/GLAD/glad -I/home/pknadimp/ray_tracing/libs/GLAD/KHR
 
-CXX_FLAGS = -g
+CXX_FLAGS = -O3 -DNDEBUG
 

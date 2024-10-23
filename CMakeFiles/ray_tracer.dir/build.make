@@ -287,6 +287,8 @@ ray_tracer: CMakeFiles/ray_tracer.dir/build.make
 ray_tracer: libimgui.a
 ray_tracer: libimgui_backend.a
 ray_tracer: /usr/lib/x86_64-linux-gnu/libglfw.so.3.3
+ray_tracer: libglad.a
+ray_tracer: /usr/lib/x86_64-linux-gnu/libtbb.so.12.5
 ray_tracer: /usr/lib/x86_64-linux-gnu/libGLX.so
 ray_tracer: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 ray_tracer: CMakeFiles/ray_tracer.dir/link.txt

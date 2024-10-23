@@ -6,7 +6,9 @@ find_package(OpenGL REQUIRED)
 
 find_package(glfw3 REQUIRED)
 
-include_directories(src libs/imgui libs/imgui/backends)
+find_package(TBB REQUIRED)
+
+include_directories(src libs/imgui libs/imgui/backends libs/GLAD/glad libs/GLAD/KHR)
 
 add_executable ( ray_tracer 
     src/main.cpp 
@@ -41,9 +43,17 @@ set(IMGUI_BACKEND_SOURCES
 
 add_library(imgui_backend STATIC ${IMGUI_BACKEND_SOURCES})
 
+set(GLAD_SOURCES 
+    libs/GLAD/glad.c
+)
+
+add_library(glad STATIC ${GLAD_SOURCES})
+
 target_link_libraries(ray_tracer PRIVATE
     imgui                  
     imgui_backend         
     glfw                     
     OpenGL::GL             
+    glad
+    TBB::tbb
 )

@@ -21,6 +21,7 @@ private:
   Ray _generate_ray(size_t x, size_t y, const Camera &camera) const;
   Vec3 _get_random_pixel_sample(size_t x, size_t y) const;
   Vec3 _get_ray_color(const Ray &ray, const World &world, int max_depth) const;
+  Vec3 _get_ray_origin(const Camera &camera) const;
 
 private:
   double m_samples_per_pixel;

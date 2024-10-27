@@ -1169,8 +1169,8 @@ CMakeFiles/ray_tracer.dir/src/main.cpp.o: src/main.cpp \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h \
   src/display.h \
+  src/examples.h \
   src/material.h \
-  src/renderer.h \
   src/sphere.h \
   src/utility.h \
   /usr/include/c++/11/random \
@@ -1180,7 +1180,12 @@ CMakeFiles/ray_tracer.dir/src/main.cpp.o: src/main.cpp \
   /usr/include/c++/11/bits/random.tcc \
   /usr/include/c++/11/numeric \
   /usr/include/c++/11/bits/stl_numeric.h \
-  /usr/include/c++/11/pstl/glue_numeric_defs.h
+  /usr/include/c++/11/pstl/glue_numeric_defs.h \
+  src/renderer.h \
+  /usr/include/c++/11/chrono \
+  /usr/include/c++/11/ratio \
+  /usr/include/c++/11/ctime \
+  /usr/include/c++/11/bits/parse_numbers.h
 
 CMakeFiles/ray_tracer.dir/src/material.cpp.o: src/material.cpp \
   /usr/include/stdc-predef.h \
@@ -2982,7 +2987,43 @@ CMakeFiles/ray_tracer.dir/src/world.cpp.o: src/world.cpp \
   /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc
+  /usr/include/c++/11/bits/vector.tcc \
+  src/material.h \
+  src/sphere.h \
+  src/utility.h \
+  /usr/include/c++/11/cmath \
+  /usr/include/math.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/11/bits/specfun.h \
+  /usr/include/c++/11/limits \
+  /usr/include/c++/11/tr1/gamma.tcc \
+  /usr/include/c++/11/tr1/special_function_util.h \
+  /usr/include/c++/11/tr1/bessel_function.tcc \
+  /usr/include/c++/11/tr1/beta_function.tcc \
+  /usr/include/c++/11/tr1/ell_integral.tcc \
+  /usr/include/c++/11/tr1/exp_integral.tcc \
+  /usr/include/c++/11/tr1/hypergeometric.tcc \
+  /usr/include/c++/11/tr1/legendre_function.tcc \
+  /usr/include/c++/11/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/11/tr1/poly_hermite.tcc \
+  /usr/include/c++/11/tr1/poly_laguerre.tcc \
+  /usr/include/c++/11/tr1/riemann_zeta.tcc \
+  /usr/include/c++/11/random \
+  /usr/include/c++/11/bits/random.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
+  /usr/include/c++/11/bits/random.tcc \
+  /usr/include/c++/11/numeric \
+  /usr/include/c++/11/bits/stl_numeric.h \
+  /usr/include/c++/11/pstl/glue_numeric_defs.h
 
 
 src/world.cpp:
@@ -3028,12 +3069,6 @@ src/sphere.cpp:
 /usr/include/oneapi/tbb/version.h:
 
 /usr/include/oneapi/tbb/detail/_namespace_injection.h:
-
-/usr/include/c++/11/ctime:
-
-/usr/include/c++/11/ratio:
-
-/usr/include/c++/11/thread:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/amxbf16intrin.h:
 
@@ -3127,8 +3162,6 @@ src/sphere.cpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/popcntintrin.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/pconfigintrin.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/11/include/mwaitintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/movdirintrin.h:
@@ -3140,10 +3173,6 @@ src/sphere.cpp:
 /usr/lib/gcc/x86_64-linux-gnu/11/include/enqcmdintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/clzerointrin.h:
-
-/usr/include/c++/11/bits/parse_numbers.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/clflushoptintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/bmi2intrin.h:
 
@@ -3211,13 +3240,27 @@ src/plane.cpp:
 
 src/material.cpp:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/clflushoptintrin.h:
+
+/usr/include/c++/11/bits/parse_numbers.h:
+
+/usr/include/c++/11/ctime:
+
+/usr/include/c++/11/thread:
+
+/usr/include/c++/11/ratio:
+
+src/renderer.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx5124fmapsintrin.h:
 
 src/sphere.h:
 
-src/renderer.h:
-
 src/material.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/pconfigintrin.h:
+
+src/examples.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h:
 

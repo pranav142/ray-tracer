@@ -203,8 +203,8 @@ CMakeFiles/ray_tracer.dir/src/main.cpp.o: \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h \
  /home/pknadimp/ray_tracing/src/display.h \
+ /home/pknadimp/ray_tracing/src/examples.h \
  /home/pknadimp/ray_tracing/src/material.h \
- /home/pknadimp/ray_tracing/src/renderer.h \
  /home/pknadimp/ray_tracing/src/sphere.h \
  /home/pknadimp/ray_tracing/src/utility.h /usr/include/c++/11/random \
  /usr/include/c++/11/bits/random.h \
@@ -212,4 +212,7 @@ CMakeFiles/ray_tracer.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
  /usr/include/c++/11/bits/random.tcc /usr/include/c++/11/numeric \
  /usr/include/c++/11/bits/stl_numeric.h \
- /usr/include/c++/11/pstl/glue_numeric_defs.h
+ /usr/include/c++/11/pstl/glue_numeric_defs.h \
+ /home/pknadimp/ray_tracing/src/renderer.h /usr/include/c++/11/chrono \
+ /usr/include/c++/11/ratio /usr/include/c++/11/ctime \
+ /usr/include/c++/11/bits/parse_numbers.h

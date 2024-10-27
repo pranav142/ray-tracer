@@ -1,5 +1,8 @@
 cmake_minimum_required(VERSION 3.16.3)
 
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O0")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O0")
+
 project(ray_tracer)
 
 find_package(OpenGL REQUIRED)
@@ -8,7 +11,7 @@ find_package(glfw3 REQUIRED)
 
 find_package(TBB REQUIRED)
 
-include_directories(src libs/imgui libs/imgui/backends libs/GLAD/glad libs/GLAD/KHR)
+target_include_directories(src libs/imgui libs/imgui/backends libs/GLAD/glad libs/GLAD/KHR)
 
 add_executable ( ray_tracer 
     src/main.cpp 
@@ -43,17 +46,12 @@ set(IMGUI_BACKEND_SOURCES
 
 add_library(imgui_backend STATIC ${IMGUI_BACKEND_SOURCES})
 
-set(GLAD_SOURCES 
+set(GLAD_SOURCES
     libs/GLAD/glad.c
 )
 
 add_library(glad STATIC ${GLAD_SOURCES})
 
 target_link_libraries(ray_tracer PRIVATE
-    imgui                  
-    imgui_backend         
-    glfw                     
-    OpenGL::GL             
-    glad
     TBB::tbb
 )

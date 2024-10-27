@@ -6,5 +6,5 @@ C_DEFINES =
 
 C_INCLUDES = -I/home/pknadimp/ray_tracing/src -I/home/pknadimp/ray_tracing/libs/imgui -I/home/pknadimp/ray_tracing/libs/imgui/backends -I/home/pknadimp/ray_tracing/libs/GLAD/glad -I/home/pknadimp/ray_tracing/libs/GLAD/KHR
 
-C_FLAGS = -O3 -DNDEBUG
+C_FLAGS =  -O0 -O3 -DNDEBUG
 

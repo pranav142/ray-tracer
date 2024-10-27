@@ -8,11 +8,11 @@
 #include "vec.h"
 #include "world.h"
 #include <algorithm>
+#include <cstddef>
 #include <cstdlib>
 #include <execution>
 #include <iostream>
 #include <memory>
-#include <mutex>
 
 Image RayTracer::render(const Camera &camera, const World &world,
                         double image_height) {
@@ -20,21 +20,26 @@ Image RayTracer::render(const Camera &camera, const World &world,
   _initialize(camera, image);
 
 #define MT 1
-#ifdef MT
+#if MT
   size_t width = image.width();
   size_t height = image.height();
 
-  // Sequential loop for `y`
-  for (size_t y = 0; y < height; y++) {
-    std::clog << "Number of lines remaining: " << height - y << '\n';
-    std::vector<size_t> x_indices(width);
-    std::iota(x_indices.begin(), x_indices.end(), 0);
-    std::for_each(std::execution::par, x_indices.begin(), x_indices.end(),
-                  [&](size_t x) {
-                    Vec3 pixel_color = _render_pixel(x, y, camera, world);
-                    image.set_pixel(x, y, pixel_color);
-                  });
-  }
+  std::vector<size_t> y_indices(height);
+  std::iota(y_indices.begin(), y_indices.end(), 0);
+
+  std::for_each(
+      std::execution::par, y_indices.begin(), y_indices.end(), [&](size_t y) {
+        // std::clog << "Number of lines remaining: " << height - y << '\n';
+
+        std::vector<size_t> x_indices(width);
+        std::iota(x_indices.begin(), x_indices.end(), 0);
+
+        std::for_each(std::execution::par, x_indices.begin(), x_indices.end(),
+                      [&](size_t x) {
+                        Vec3 pixel_color = _render_pixel(x, y, camera, world);
+                        image.set_pixel(x, y, pixel_color);
+                      });
+      });
 #else
 
   for (size_t y = 0; y < image.height(); y++) {

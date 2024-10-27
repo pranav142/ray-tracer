@@ -84,9 +84,7 @@ clean: CMakeFiles/glad.dir/clean
 # Target rules for target CMakeFiles/ray_tracer.dir
 
 # All Build rule for target.
-CMakeFiles/ray_tracer.dir/all: CMakeFiles/imgui.dir/all
-CMakeFiles/ray_tracer.dir/all: CMakeFiles/imgui_backend.dir/all
-CMakeFiles/ray_tracer.dir/all: CMakeFiles/glad.dir/all
+CMakeFiles/ray_tracer.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ray_tracer.dir/build.make CMakeFiles/ray_tracer.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ray_tracer.dir/build.make CMakeFiles/ray_tracer.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pknadimp/ray_tracing/CMakeFiles --progress-num=12,13,14,15,16,17,18,19,20,21,22,23,24,25 "Built target ray_tracer"
@@ -94,7 +92,7 @@ CMakeFiles/ray_tracer.dir/all: CMakeFiles/glad.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ray_tracer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pknadimp/ray_tracing/CMakeFiles 25
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pknadimp/ray_tracing/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ray_tracer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pknadimp/ray_tracing/CMakeFiles 0
 .PHONY : CMakeFiles/ray_tracer.dir/rule

@@ -1,6 +1,9 @@
 #!/bin/bash
 
-cmake -DCMAKE_BUILD_TYPE=Release .
+mkdir -p build
+cd build
+
+cmake -DCMAKE_BUILD_TYPE=Release ..
 
 cmake --build .
 if [ $? -ne 0 ]; then
@@ -8,11 +11,11 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
-./ray_tracer > image.ppm
+./ray_tracer > ../image.ppm
 if [ $? -ne 0 ]; then
   echo "Ray tracer execution failed."
   exit 1
 fi
 
-display image.ppm
+display ../image.ppm
 

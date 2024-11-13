@@ -2,7 +2,7 @@
 
 A high-performance, multi-threaded ray tracer written in C++ that renders 3D scenes with high detail. This project leverages parallel processing to speed up the rendering of complex scenes, allowing you to explore the capabilities of ray tracing and generate stunning visuals.
 
-![Sample Rendered Image](./sample_render.png)
+![Sample Rendered Image](./images/example)
 
 ## Features
 - **Multi-threading:** Efficiently utilizes multiple CPU cores to speed up rendering.
@@ -16,7 +16,6 @@ A high-performance, multi-threaded ray tracer written in C++ that renders 3D sce
 - **C++17 or later**
 - **CMake** (for building the project)
 - **libpthread** (POSIX threading library)
-- **OpenGL** and **GLFW** (if using ImGui for display)
 
 ## Installation
 
@@ -36,30 +35,11 @@ A high-performance, multi-threaded ray tracer written in C++ that renders 3D sce
    This script will:
    - Create a `build` directory.
    - Use CMake to configure and build the project.
-   - Run the ray tracer, displaying output to the console.
-
-3. **Configure Scene Settings**  
-   Modify `scene_config.h` (or equivalent file) to customize objects, materials, lighting, and camera settings in the scene.
+   - Run the ray tracer, displaying the output to the screen.
 
 ## Usage
-Simply run the `run.sh` script. The rendered image will be displayed using ImGui or saved to an output file (`output.ppm`) in the root directory. 
+Simply run the `run.sh` script. The rendered image will be displayed using linux display. 
 
 ```bash
 ./run.sh
 ```
-
-For direct execution without the script:
-1. Navigate to the `build` directory:
-   ```bash
-   cd build
-   ```
-2. Run the compiled binary:
-   ```bash
-   ./ray_tracer
-   ```
-
-## Contributing
-Contributions are welcome! Feel free to submit issues, feature requests, or pull requests.
-
-## License
-This project is licensed under the MIT License.

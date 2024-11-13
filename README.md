@@ -2,7 +2,7 @@
 
 A high-performance, multi-threaded ray tracer written in C++ that renders 3D scenes with high detail. This project leverages parallel processing to speed up the rendering of complex scenes, allowing you to explore the capabilities of ray tracing and generate stunning visuals.
 
-![Sample Rendered Image](./images/example)
+![Sample Rendered Image](./images/example.png)
 
 ## Features
 - **Multi-threading:** Efficiently utilizes multiple CPU cores to speed up rendering.
